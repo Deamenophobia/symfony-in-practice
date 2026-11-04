@@ -4,6 +4,29 @@ Eight complete articles and runnable backend experiments for learning Symfony al
 
 Start with the [article index](docs/articles/README.md). Each article includes a runnable lab, measured results, and primary references. The companion has no frontend application. The examples distinguish PHP language behavior, Symfony component behavior, and rules supplied by the application.
 
+## Source and published articles
+
+This is the public companion repository for the [Symfony articles on Happy Kokoro](https://happykokoro.com/posts#collection-symfony-in-practice). Clone the full repository to obtain the tutorial revision tags:
+
+```sh
+git clone https://github.com/Deamenophobia/symfony-in-practice.git
+cd symfony-in-practice
+git tag --list
+```
+
+The default branch includes the completed application and documentation. Each article names its starting or completed tag when a particular revision is needed. Install dependencies and prepare the disposable database using the setup instructions below. Public synthetic fixture credentials belong only to the local learning environment.
+
+- [Symfony request handling from PHP objects to kernel events](https://happykokoro.com/posts/symfony-in-practice-http-kernel)
+- [Modern PHP types and metadata in a Symfony application](https://happykokoro.com/posts/symfony-in-practice-modern-php)
+- [Symfony dependency injection and the compiled service container](https://happykokoro.com/posts/symfony-in-practice-service-container)
+- [Symfony request mapping and validation at the API boundary](https://happykokoro.com/posts/symfony-in-practice-input-validation)
+- [Doctrine entities and the boundary between objects and SQL](https://happykokoro.com/posts/symfony-in-practice-doctrine)
+- [Symfony authentication and voters for account-owned orders](https://happykokoro.com/posts/symfony-in-practice-security)
+- [Symfony Messenger retries and repeated delivery](https://happykokoro.com/posts/symfony-in-practice-messenger)
+- [Testing and operating the Symfony ordering backend](https://happykokoro.com/posts/symfony-in-practice-testing-and-operations)
+
+See [the source release record](docs/SOURCE-RELEASE-2026-11-04.md) for the preserved revisions and verification limits.
+
 ## Reading order
 
 | Part | Article | Main experiment |
@@ -29,7 +52,7 @@ Start with the [article index](docs/articles/README.md). Each article includes a
 
 Symfony 7.4 is the chosen LTS line. Each installed package's exact version is in `composer.lock`; some components have different patch versions. Run `composer install` to reproduce the dependency set. Composer's PHP platform setting assists dependency resolution; the real runtime must still supply PHP 8.4 and the required extensions, including `pdo_mysql`.
 
-The repository's two local tags are `symfony-start` (installed skeleton and dependencies) and `symfony-complete` (application, tests, labs, and manuscripts). They are local review points. No remote repository or published article is required to run the companion.
+The repository tags are `symfony-start` (installed skeleton and dependencies) and `symfony-complete` (application, tests, labs, and manuscripts). Both are available in this public repository and retain their original commits. Use the article’s named revision when comparing recorded results.
 
 ## Prepare the disposable database
 

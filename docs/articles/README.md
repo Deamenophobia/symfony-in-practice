@@ -17,4 +17,4 @@ Each manuscript is complete, includes its own reproducible experiment, and links
 
 Use the [root README](../../README.md) for dependencies, database setup, API requests, and verification commands. The labs use PHP 8.4.27, Symfony 7.4.22, and MySQL 8.4.10. The [verification record](../VERIFICATION.md) distinguishes in-process HTTP tests from actual TCP requests and separate worker processes.
 
-The canonical manuscripts live in this repository. Local reading copies belong to the blog's preview library under the **Symfony in Practice** series. They remain drafts until a separate publishing step.
+The canonical manuscripts live in this public repository. Read the [published Symfony in Practice series](https://happykokoro.com/posts#collection-symfony-in-practice); the root README lists each public article and clone instructions.
