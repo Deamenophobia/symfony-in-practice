@@ -1,0 +1,36 @@
+{
+    "recorded_at": "2026-11-04T10:26:17+00:00",
+    "php": "8.4.27",
+    "mysql": "8.4.10",
+    "database": "symfony_practice_test",
+    "packages": {
+        "symfony/framework-bundle": "v7.4.22",
+        "symfony/http-kernel": "v7.4.22",
+        "symfony/messenger": "v7.4.22",
+        "doctrine/orm": "3.7.6",
+        "doctrine/dbal": "4.5.0"
+    },
+    "results": {
+        "invalid_limit_exit": 2,
+        "dry_run_exit": 0,
+        "dry_run": {
+            "order_ids": [
+                1
+            ],
+            "enqueued": 0
+        },
+        "queued_after_dry_run": 0,
+        "dispatch_exit": 0,
+        "dispatch": {
+            "order_ids": [
+                1
+            ],
+            "enqueued": 1
+        },
+        "after_worker": {
+            "order_ids": [],
+            "enqueued": 0
+        },
+        "tasks": 1
+    }
+}

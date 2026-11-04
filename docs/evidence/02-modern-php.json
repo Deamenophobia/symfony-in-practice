@@ -1,0 +1,27 @@
+{
+    "recorded_at": "2026-11-04T10:10:33+00:00",
+    "php": "8.4.27",
+    "mysql": "8.4.10",
+    "database": "symfony_practice_test",
+    "packages": {
+        "symfony/framework-bundle": "v7.4.22",
+        "symfony/http-kernel": "v7.4.22",
+        "symfony/messenger": "v7.4.22",
+        "doctrine/orm": "3.7.6",
+        "doctrine/dbal": "4.5.0"
+    },
+    "results": {
+        "total_cents": 2500,
+        "original_cents": 1250,
+        "strict_string": "TypeError",
+        "weak_string_cents": 1250,
+        "readonly_write": "Error",
+        "negative_amount": "InvalidArgumentException",
+        "constructor_quantity": 0,
+        "range_attributes": 1,
+        "validator_violations": 1,
+        "confirmed_status": "confirmed",
+        "repeated_confirmation": "DomainException",
+        "unknown_enum": null
+    }
+}

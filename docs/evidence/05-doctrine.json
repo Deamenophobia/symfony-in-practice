@@ -1,0 +1,56 @@
+{
+    "recorded_at": "2026-11-04T10:12:43+00:00",
+    "php": "8.4.27",
+    "mysql": "8.4.10",
+    "database": "symfony_practice_test",
+    "packages": {
+        "symfony/framework-bundle": "v7.4.22",
+        "symfony/http-kernel": "v7.4.22",
+        "symfony/messenger": "v7.4.22",
+        "doctrine/orm": "3.7.6",
+        "doctrine/dbal": "4.5.0"
+    },
+    "results": {
+        "after_persist_rows": 0,
+        "id_before_flush": null,
+        "insert_sql": [
+            {
+                "sql": "INSERT INTO orders (account_id, sku, quantity, unit_price_cents, total_cents, reference, status) VALUES (?, ?, ?, ?, ?, ?, ?)",
+                "params": {
+                    "1": 1,
+                    "2": "COFFEE",
+                    "3": 2,
+                    "4": 1250,
+                    "5": 2500,
+                    "6": "BEFORE",
+                    "7": "open"
+                }
+            }
+        ],
+        "after_flush_rows": 1,
+        "same_identity": true,
+        "identity_lookup_queries": 0,
+        "new_object_after_clear": true,
+        "reload_sql": [
+            {
+                "sql": "SELECT t0.id AS id_1, t0.account_id AS account_id_2, t0.sku AS sku_3, t0.quantity AS quantity_4, t0.unit_price_cents AS unit_price_cents_5, t0.total_cents AS total_cents_6, t0.reference AS reference_7, t0.status AS status_8 FROM orders t0 WHERE t0.id = ?",
+                "params": {
+                    "1": 1
+                }
+            }
+        ],
+        "before_update_flush": "BEFORE",
+        "update_sql": [
+            {
+                "sql": "UPDATE orders SET reference = ? WHERE id = ?",
+                "params": {
+                    "1": "AFTER",
+                    "2": 1
+                }
+            }
+        ],
+        "after_update_flush": "AFTER",
+        "rows_after_rollback": 1,
+        "entity_manager_closed": true
+    }
+}

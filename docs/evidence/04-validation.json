@@ -1,0 +1,48 @@
+{
+    "recorded_at": "2026-11-04T10:20:03+00:00",
+    "php": "8.4.27",
+    "mysql": "8.4.10",
+    "database": "symfony_practice_test",
+    "packages": {
+        "symfony/framework-bundle": "v7.4.22",
+        "symfony/http-kernel": "v7.4.22",
+        "symfony/messenger": "v7.4.22",
+        "doctrine/orm": "3.7.6",
+        "doctrine/dbal": "4.5.0"
+    },
+    "results": {
+        "statuses": {
+            "valid": 201,
+            "zero_quantity": 422,
+            "wrong_type": 422,
+            "numeric_string": 422,
+            "missing_quantity": 422,
+            "malformed_json": 400,
+            "wrong_media_type": 415,
+            "extra_price": 400,
+            "unknown_product": 422
+        },
+        "created_order": {
+            "data": {
+                "id": 1,
+                "sku": "COFFEE",
+                "quantity": 2,
+                "unit_price_cents": 1250,
+                "total_cents": 2500,
+                "currency": "SGD",
+                "reference": "PO-API",
+                "status": "open"
+            }
+        },
+        "zero_violations": {
+            "error": "Unprocessable Content",
+            "violations": [
+                {
+                    "field": "quantity",
+                    "message": "This value should be between 1 and 20."
+                }
+            ]
+        },
+        "persisted_orders": 1
+    }
+}
